@@ -1,0 +1,20 @@
+meta {
+  name: Get Access Token
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/oauth2/token?grant_type=client_credentials&scope=CUSTOM
+  body: none
+  auth: none
+}
+
+query {
+  grant_type: client_credentials
+  scope: CUSTOM
+}
+
+headers {
+  Authorization: Basic Y2xpZW50OnNlY3JldA==
+}

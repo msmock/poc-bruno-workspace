@@ -1,0 +1,26 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/practitioner
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "resourceType": "Patient",
+      "id": "Id-39808",
+      "name": [
+          {
+              "family": "Simpson",
+              "given": [
+                  "James"
+              ]
+          }
+      ]
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/patient
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "resourceType": "Patient",
+      "id": "Id-39808",
+      "name": [
+          {
+              "family": "Simpson",
+              "given": [
+                  "James"
+              ]
+          }
+      ]
+  }
+}

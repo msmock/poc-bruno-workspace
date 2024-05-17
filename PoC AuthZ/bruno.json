@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "PoC AuthZ",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/practitioner
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "resourceType": "Practitioner",
+    "id": "Id-3",
+    "name": [
+      {
+        "family": "Simpson",
+        "given": [
+          "James"
+        ]
+      }
+    ]
+  }
+}
