@@ -5,16 +5,21 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/oauth2/token?grant_type=client_credentials&scope=CUSTOM
-  body: none
+  url: http://localhost:8080/oauth2/token
+  body: multipartForm
   auth: none
-}
-
-query {
-  grant_type: client_credentials
-  scope: CUSTOM
 }
 
 headers {
   Authorization: Basic Y2xpZW50OnNlY3JldA==
+}
+
+body:form-urlencoded {
+  grant_type: client_credentials
+  scope: CUSTOM
+}
+
+body:multipart-form {
+  grant_type: client_credentials
+  scope: CUSTOM
 }
