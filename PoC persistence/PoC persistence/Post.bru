@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://localhost:9999/persistence
+  url: http://localhost:8080/persistence
   body: json
   auth: none
 }
@@ -13,7 +13,7 @@ post {
 body:json {
     {
         "resourceType" : "Patient",
-        "id" : "123456784",
+        "id" : "123456789",
         "meta" : {
           "profile" : ["http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"]
         },
