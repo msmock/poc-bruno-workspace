@@ -12,15 +12,59 @@ post {
 
 body:json {
   {
-      "resourceType": "Patient",
-      "id": "Id-39808",
-      "name": [
-          {
-              "family": "Simpson",
-              "given": [
-                  "James"
-              ]
-          }
+    "resourceType": "Patient",
+    "id": "Id-3",
+    "meta": {
+      "profile": [
+        "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
       ]
+    },
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Paris",
+          "country": "Frankreich"
+        }
+      },
+      {
+        "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin",
+        "valueAddress": {
+          "city": "Köniz",
+          "state": "BE",
+          "country": "Switzerland"
+        }
+      }
+    ],
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.756.5.30.1.127.3.10.3",
+        "value": "761337615317835750"
+      }
+    ],
+    "name": [
+      {
+        "family": "Muster",
+        "given": [
+          "Sabine"
+        ],
+        "prefix": [
+          "Frau"
+        ]
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1997-02-21",
+    "address": [
+      {
+        "line": [
+          "Solothurner Strasse 151"
+        ],
+        "city": "Oensingen",
+        "state": "Solothurn",
+        "postalCode": "4702",
+        "country": "CH"
+      }
+    ]
   }
 }
