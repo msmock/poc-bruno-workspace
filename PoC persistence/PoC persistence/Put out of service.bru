@@ -1,0 +1,15 @@
+meta {
+  name: Put out of service
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8761/eureka/v2/apps/POC-SERVICE/poc-service:4fda5ab9-9b00-42fb-8f02-0d04d1d35c03/status?value=OUT_OF_SERVICE
+  body: none
+  auth: none
+}
+
+query {
+  value: OUT_OF_SERVICE
+}
