@@ -1,0 +1,48 @@
+meta {
+  name: Post Patient
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://martins-air:8080/persistence
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "resourceType": "Patient",
+    "id": "41c7f11a-73c8-49c4-8d9c-e50672440e79",
+    "identifier": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "value": "756.0827.6843.39"
+      }
+    ],
+    "name": [
+      {
+        "family": "Smock",
+        "given": [
+          "Martin"
+        ],
+        "prefix": [
+          "Dr"
+        ]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1963-08-13",
+    "address": [
+      {
+        "line": [
+          "Leuenallee 14"
+        ],
+        "city": "Oensingen",
+        "state": "Solothurn",
+        "postalCode": "4702",
+        "country": "CH"
+      }
+    ]
+  }
+}
